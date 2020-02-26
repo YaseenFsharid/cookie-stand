@@ -2,6 +2,7 @@
 
 
 
+
 function getRandomArbitrary(min, max, avg) {
     return Math.floor((Math.random() * (max - min) + min) * avg);
   }
@@ -23,6 +24,17 @@ function getRandomArbitrary(min, max, avg) {
     ['7pm', 0]
   ];
   (function() {
+    var dd=document.getElementById("dd");
+    var link =document.createElement('a');
+    link.textContent="index.html"
+    link.setAttribute('href','index.html');
+    dd.appendChild(link);
+
+    var link2 =document.createElement('a');
+    link2.textContent="sales.html"
+    link2.setAttribute('href','sales.html');
+    dd.appendChild(link2);
+    
     var div = document.getElementById('sales-tabel');
     var tabel = document.createElement('table');
     tabel.setAttribute('id', 'tabel');
@@ -105,23 +117,7 @@ function getRandomArbitrary(min, max, avg) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
 // var Seattle ={
 //     name :"Seattle",
@@ -138,7 +134,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.total+this.cookiePerHour[i];
+//         this.total +=this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -182,7 +178,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.total+this.cookiePerHour[i];
+//         this.total +=this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -224,7 +220,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.total+this.cookiePerHour[i];
+//         this.total +=+this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -266,7 +262,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.total+this.cookiePerHour[i];
+//         this.total +=this.cookiePerHour[i];
 //        } 
           
 //     },
