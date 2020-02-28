@@ -25,16 +25,7 @@ function getRandomArbitrary(min, max, avg) {
   ];
   (function() {
     var dd=document.getElementById("dd");
-    var link =document.createElement('a');
-    link.textContent="index.html"
-    link.setAttribute('href','index.html');
-    dd.appendChild(link);
 
-    var link2 =document.createElement('a');
-    link2.textContent="sales.html"
-    link2.setAttribute('href','sales.html');
-    dd.appendChild(link2);
-    
     var div = document.getElementById('sales-tabel');
     var tabel = document.createElement('table');
     tabel.setAttribute('id', 'tabel');
@@ -112,8 +103,10 @@ function getRandomArbitrary(min, max, avg) {
     tr.appendChild(td);
     tabel.appendChild(tr);
   })();
+  
 
 
+  document.getElementById
 
 
 
