@@ -80,3 +80,82 @@ header h1{
     display: inline-block;
     margin-right:20px;
 }
+body{
+    background-color: rgb(10, 165, 226);  
+}
+#tabel{
+    
+    margin-left: 11%;
+}
+#tabel th,td {
+    border: 1px solid  rgb(5, 133, 150);
+   padding: 4px; 
+   color: rgb(56, 68, 70); 
+   text-align: center;
+font-size: 25px;
+
+}
+#salmohe img{
+    width: 402px;
+    margin-left: 33%;
+}
+#salmonForm legend{
+font-family: 'Indie Flower';
+color: rgb(56, 68, 70); 
+text-align: center;
+font-size: 25px;
+}
+label{
+    font-size: 25px;
+    font-family: 'Yellowtail';
+   color:  rgb(56, 68, 70); 
+}
+
+#Cityname{
+    color:  rgb(5, 133, 150);
+    background-color: rgb(20, 42, 77);
+    margin-left: 10px;
+    padding: 4px;
+}
+
+#min{
+    color:  rgb(5, 133, 150);
+    background-color: rgb(20, 42, 77);
+    margin-left: 19px;
+    padding: 4px;
+}
+#max
+{
+        color:  rgb(5, 133, 150);
+        background-color: rgb(20, 42, 77);
+        margin-left: 9px;
+        padding: 4px;
+}
+
+#avg{
+            color:  rgb(5, 133, 150);
+            background-color: rgb(20, 42, 77);
+
+            margin-left: 27px;
+            padding: 4px;
+}    
+#submit{
+    color:  rgb(5, 133, 150);
+    background-color: rgb(20, 42, 77);
+
+    margin-left: 112px;
+    padding: 10px;
+    margin-top: 12px;
+}
+#divvv{
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 27px;
+}
+fieldset{
+    margin-left: 1px;
+    width: 50%;
+    margin-top: 16px;
+    margin-left: 24%;
+    color: cornflowerblue;
+}
