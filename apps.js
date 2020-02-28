@@ -90,10 +90,10 @@ function getRandomArbitrary(min, max, avg) {
   salmonForm.addEventListener('submit',function(Event){
   Event.preventDefault();
   var cityname = Event.target.Cityname.value;
-  var minimum =Event.target.min.value;
-  var maximun=Event.target.max.value;
-  var avag =Event.target.avg.value;
-  parseFloat(avag);
+  var minimum =parseInt(Event.target.min.value);
+  var maximun=parseInt(Event.target.max.value);
+  var avag =parseFloat(Event.target.avg.value);
+
   if (cityname==''){
     alert("please enter a cityname");
     }
@@ -105,10 +105,12 @@ function getRandomArbitrary(min, max, avg) {
     }else{
       var NewLoc=new Loction(cityname,minimum,maximun,avag);
       NewLoc.render();
+      
       Totaloftotal();
     }
   
   });
+ 
   Totaloftotal =function() {
     var tabel = document.getElementById('tabel');
     var tr = document.createElement('tr');
@@ -125,7 +127,9 @@ function getRandomArbitrary(min, max, avg) {
     tr.appendChild(td);
     tabel.appendChild(tr);
 } 
-  
+
+
+
 
 
 
