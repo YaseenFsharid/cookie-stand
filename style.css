@@ -1,10 +1,82 @@
+#indpage{
+    background-color: rgb(10, 165, 226);
+}
+header{
+    background-color: rgb(73, 196, 245);
+}
+
+header h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Yellowtail';
+    color: rgb(5, 133, 150);
+}
+#htmlheader li{
+    opacity: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-right:20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Indie Flower';
+    color: rgb(56, 68, 70);
+}
+#htmlheader{
+    margin-left: 527px;
+}
+#piclist{
+    margin-left:57px ;
+}
+#indmain{
+    background-color: rgb(73, 196, 245);
+}
+#indmain h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Yellowtail';
+    color: rgb(5, 133, 150);
+
+}
+#piclist li{
+    opacity: 0.9;
+    display: inline-block;
+    text-decoration: none;
+    padding-right:15px ; 
+   }
+
+#indmain p{
+    margin-left: 62px;
+    font-size: 25px;
+    font-family: 'Indie Flower';
+    color: rgb(56, 68, 70);
+}
+#indfooter{
+    background-color: rgb(73, 196, 245);
+}
+#indfooter ul li{
+    opacity: 0.9;
+    display: table-cell;
+    text-decoration: none;
+    padding-right:15px ; 
+}
+#sail{
+    font-family: 'Indie Flower';
+    color: rgb(56, 68, 70);
+    text-align: center;  
+}
+.cityName{
+    font-size: 25px;
+    font-family: 'Yellowtail';
+    color: rgb(5, 133, 150);
+
+}
+.cityName2{
+    font-size: 25px;
+    font-family: 'Indie Flower';
+    color: rgb(56, 68, 70);
+}
 .csswork{
     border-right: 3px solid  rgb(108, 158, 112);
     display: inline-block;
     margin-right:20px;
 }
-#tabel tr,td{
-    border: 1px solid  rgb(108, 158, 112);
-    background-color: rgb(184, 233, 188);    
-}
-
