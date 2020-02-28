@@ -2,7 +2,6 @@
 
 
 
-
 function getRandomArbitrary(min, max, avg) {
     return Math.floor((Math.random() * (max - min) + min) * avg);
   }
@@ -22,10 +21,9 @@ function getRandomArbitrary(min, max, avg) {
     ['5pm', 0],
     ['6pm', 0],
     ['7pm', 0]
-  ];
-  (function() {
-    var dd=document.getElementById("dd");
+    ];
 
+  TimeTotalFetch =function() {
     var div = document.getElementById('sales-tabel');
     var tabel = document.createElement('table');
     tabel.setAttribute('id', 'tabel');
@@ -43,7 +41,8 @@ function getRandomArbitrary(min, max, avg) {
     tr.appendChild(th);
     tabel.appendChild(tr);
     div.appendChild(tabel);
-  })();
+  }
+  TimeTotalFetch();
   function Loction(name, min, max, avg) {
     this.total = 0;
     this.name = name;
@@ -57,7 +56,7 @@ function getRandomArbitrary(min, max, avg) {
       this.cookies.push(getRandomArbitrary(this.min, this.max, this.avg));
     }
   };
-  Loction.prototype.render = function() {
+  Loction.prototype.render = function(){
     this.randomCustomers();
     var tabel = document.getElementById('tabel');
     var tr = document.createElement('tr');
@@ -87,7 +86,33 @@ function getRandomArbitrary(min, max, avg) {
   Paris.render();
   var Lima = new Loction('Lima', 2, 16, 4.6);
   Lima.render();
-  (function() {
+    
+  var salmonForm=document.getElementById("salmonForm");
+  salmonForm.addEventListener('submit',function(Event){
+  Event.preventDefault();
+  var cityname = Event.target.Cityname.value;
+  var minimum =parseInt(Event.target.min.value);
+  var maximun=parseInt(Event.target.max.value);
+  var avag =parseFloat(Event.target.avg.value);
+
+  if (cityname==''){
+    alert("please enter a cityname");
+    }
+    else if(minimum>maximun)
+    {
+     alert("please enter a number greater than the maximum");
+    }else if(minimum<-1 || maximun<-1 || avag<-1){
+      alert("Enter a non negative number");
+    }else{
+      var NewLoc=new Loction(cityname,minimum,maximun,avag);
+      NewLoc.render();
+      
+      Totaloftotal();
+    }
+  
+  });
+   
+  Totaloftotal =function() {
     var tabel = document.getElementById('tabel');
     var tr = document.createElement('tr');
     var td = document.createElement('td');
@@ -102,16 +127,33 @@ function getRandomArbitrary(min, max, avg) {
     td.textContent = totalTotal;
     tr.appendChild(td);
     tabel.appendChild(tr);
-  })();
+  }
   
 
 
-  document.getElementById
 
 
 
-// var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 // var Seattle ={
 //     name :"Seattle",
 //     customerPerHour:[],
@@ -127,7 +169,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.cookiePerHour[i];
+//         this.total +=this.total+this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -171,7 +213,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.cookiePerHour[i];
+//         this.total +=this.total+this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -213,7 +255,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=+this.cookiePerHour[i];
+//         this.total +=this.total+this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -255,7 +297,7 @@ function getRandomArbitrary(min, max, avg) {
 //         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
 //         this.cookiePerHour.push(cokPerHou);
 
-//         this.total +=this.cookiePerHour[i];
+//         this.total +=this.total+this.cookiePerHour[i];
 //        } 
           
 //     },
@@ -324,8 +366,3 @@ function getRandomArbitrary(min, max, avg) {
 
 // }
 // Lima.RenderThat();
-
-
-
-
-
