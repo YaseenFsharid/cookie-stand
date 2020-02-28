@@ -21,9 +21,9 @@ function getRandomArbitrary(min, max, avg) {
     ['5pm', 0],
     ['6pm', 0],
     ['7pm', 0]
-  ];
+    ];
 
-   TimeTotalFetch =function() {
+  TimeTotalFetch =function() {
     var div = document.getElementById('sales-tabel');
     var tabel = document.createElement('table');
     tabel.setAttribute('id', 'tabel');
@@ -86,6 +86,7 @@ function getRandomArbitrary(min, max, avg) {
   Paris.render();
   var Lima = new Loction('Lima', 2, 16, 4.6);
   Lima.render();
+    
   var salmonForm=document.getElementById("salmonForm");
   salmonForm.addEventListener('submit',function(Event){
   Event.preventDefault();
@@ -110,7 +111,7 @@ function getRandomArbitrary(min, max, avg) {
     }
   
   });
- 
+   
   Totaloftotal =function() {
     var tabel = document.getElementById('tabel');
     var tr = document.createElement('tr');
@@ -126,7 +127,8 @@ function getRandomArbitrary(min, max, avg) {
     td.textContent = totalTotal;
     tr.appendChild(td);
     tabel.appendChild(tr);
-} 
+  }
+  
 
 
 
@@ -151,7 +153,7 @@ function getRandomArbitrary(min, max, avg) {
 
 
 
-
+  // var hours =['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 // var Seattle ={
 //     name :"Seattle",
 //     customerPerHour:[],
@@ -364,8 +366,4 @@ function getRandomArbitrary(min, max, avg) {
 
 // }
 // Lima.RenderThat();
-
-
-
-
 
