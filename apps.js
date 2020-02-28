@@ -15,7 +15,7 @@ var Seattle ={
         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
         this.cookiePerHour.push(cokPerHou);
 
-        this.total +=this.total+this.cookiePerHour[i];
+        this.total +=total+this.cookiePerHour[i];
        } 
           
     },
@@ -59,7 +59,7 @@ var Tokyo ={
         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
         this.cookiePerHour.push(cokPerHou);
 
-        this.total +=this.total+this.cookiePerHour[i];
+        this.total +=total+this.cookiePerHour[i];
        } 
           
     },
@@ -101,7 +101,7 @@ var Dubai ={
         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
         this.cookiePerHour.push(cokPerHou);
 
-        this.total +=this.total+this.cookiePerHour[i];
+        this.total +=total+this.cookiePerHour[i];
        } 
           
     },
@@ -143,7 +143,7 @@ var Paris ={
         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
         this.cookiePerHour.push(cokPerHou);
 
-        this.total +=this.total+this.cookiePerHour[i];
+        this.total +=total+this.cookiePerHour[i];
        } 
           
     },
@@ -186,7 +186,7 @@ var Lima ={
         var cokPerHou=Math.floor(this.customerPerHour[i]*this.avg);
         this.cookiePerHour.push(cokPerHou);
 
-        this.total +=this.total+this.cookiePerHour[i];
+        this.total +=total+this.cookiePerHour[i];
        } 
           
     },
